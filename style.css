@@ -1,0 +1,69 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 240, 240);
+    background-image: url('pexels-nandhukumar-312839.jpg');
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between squares */
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+    padding: 20px;
+    color: white;
+}
+.upper-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(171, 171, 223);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.square {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(171, 171, 223);
+}
+.scatola{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(171, 171, 223);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.button-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+#target-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+#computer-number {
+    font-size: 24px;
+    font-weight: bold;
+}
