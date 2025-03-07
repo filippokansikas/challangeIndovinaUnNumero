@@ -1,7 +1,7 @@
 function playGame() {
-    const targetNumber = Math.floor(Math.random() * 1000) + 1;
-    /*const userGuess = parseInt(prompt("Guess a number between 1 and 100:"), 10);*/
-    const computerGuess = Math.floor(Math.random() * 1000) + 1;
+    const targetNumber = Math.floor(Math.random() * 10);
+    
+    const computerGuess = Math.floor(Math.random() * 10);
     const userGuess = document.getElementById("number").value;
 
     document.getElementById('computer-number').innerHTML = " Computer Number: " + computerGuess;
@@ -20,12 +20,12 @@ function playGame() {
 function increase() {
     var value = parseInt(document.getElementById('number').value, 10);
     value = isNaN(value) ? 0 : value;
-    value++;
+    value < 9 ?  value ++: value;
     document.getElementById('number').value = value;
 }
 function decrease() {
     var value = parseInt(document.getElementById('number').value, 10);
     value = isNaN(value) ? 0 : value;
-    value--;
+    value > 0 ?  value-- : value;
     document.getElementById('number').value = value;
 }
